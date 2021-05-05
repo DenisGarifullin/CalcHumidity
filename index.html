@@ -1,0 +1,219 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form name="weather" method="post">
+      
+	  <span class="font">Сухометр</span><br>
+      <input class="inp" type="number" size="4"  placeholder="18º-25º" name="dry"/><br>
+	  <span class="font">Влажнометр</span><br>
+      <input  class="inp" type="number" size="4" name="wet" placeholder="5º-25º"/><br><br>
+      <input  class="inpbutton" type="submit" name="submit" value="ВЛАЖНОСТЬ" onclick="let dryTermo = Number(document.forms.weather.dry.value);
+	  let wetTermo = Number(document.forms.weather.wet.value);
+	  let differenceTermo = dryTermo - wetTermo;
+	  let rezultat = 0;	  
+      if(dryTermo < 18 ){rezultat = '<Низкая температура>';};
+	  if(dryTermo > 25 ){rezultat = '<Высокая температура>';};	  
+	  if(dryTermo == 18){	    
+	    if (differenceTermo < 1){rezultat = '<Предел в сторону 100%>';};
+	    if (differenceTermo < 0){rezultat = '<Неправильные показания>';};
+   	    if (differenceTermo == 1){rezultat = 90;};
+	    if (differenceTermo == 1.5){rezultat = 84;};
+	    if (differenceTermo == 2){rezultat = 79;};
+	    if (differenceTermo == 2.5){rezultat = 74;};
+	    if (differenceTermo == 3){rezultat = 70;};
+	    if (differenceTermo == 3.5){rezultat = 65;};
+	    if (differenceTermo == 4){rezultat = 60;};
+	    if (differenceTermo == 4.5){rezultat = 55;};
+	    if (differenceTermo == 5){rezultat = 51;};
+	    if (differenceTermo == 5.5){rezultat = 47;};
+	    if (differenceTermo == 6){rezultat = 42;};
+	    if (differenceTermo == 6.5){rezultat = 37;};
+	    if (differenceTermo == 7){rezultat = 33;};
+	    if (differenceTermo == 7.5){rezultat = 29;};
+	    if (differenceTermo == 8){rezultat = 24;};
+	    if (differenceTermo == 8.5){rezultat = 21;};
+	    if (differenceTermo == 9){rezultat = 17;};
+	    if (differenceTermo > 9){rezultat = '<Предел в сторону 0%>';};
+	  }
+	  if(dryTermo == 19){
+	    if (differenceTermo < 1){rezultat = '<Предел в сторону 100%>';};
+	    if (differenceTermo < 0){rezultat = '<Неправильные показания>';};
+	    if (differenceTermo == 1){rezultat = 90;}
+	    if (differenceTermo == 1.5){rezultat = 85;}
+		if (differenceTermo == 2){rezultat = 80;}
+		if (differenceTermo == 2.5){rezultat = 75;}
+		if (differenceTermo == 3){rezultat = 70;}
+		if (differenceTermo == 3.5){rezultat = 66;}
+		if (differenceTermo == 4){rezultat = 61;}
+		if (differenceTermo == 4.5){rezultat = 57;}
+		if (differenceTermo == 5){rezultat = 52;}
+		if (differenceTermo == 5.5){rezultat = 48;}
+		if (differenceTermo == 6){rezultat = 44;}
+		if (differenceTermo == 6.5){rezultat = 39;}
+		if (differenceTermo == 7){rezultat = 35;}
+		if (differenceTermo == 7.5){rezultat = 31;}
+		if (differenceTermo == 8){rezultat = 27;}
+		if (differenceTermo == 8.5){rezultat = 23;}
+		if (differenceTermo == 9){rezultat = 19;}
+		if (differenceTermo > 9){rezultat = '<Предел в сторону 0%>';}
+		};
+      if(dryTermo == 20){
+	    if (differenceTermo < 1){rezultat = '<Предел в сторону 100%>';};
+	    if (differenceTermo < 0){rezultat = '<Неправильные показания>';};
+	    if (differenceTermo == 1){rezultat = 90;}
+	    if (differenceTermo == 1.5){rezultat = 85;}
+		if (differenceTermo == 2){rezultat = 81;}
+		if (differenceTermo == 2.5){rezultat = 76;}
+		if (differenceTermo == 3){rezultat = 71;}
+		if (differenceTermo == 3.5){rezultat = 67;}
+		if (differenceTermo == 4){rezultat = 63;}
+		if (differenceTermo == 4.5){rezultat = 58;}
+		if (differenceTermo == 5){rezultat = 54;}
+		if (differenceTermo == 5.5){rezultat = 50;}
+		if (differenceTermo == 6){rezultat = 45;}
+		if (differenceTermo == 6.5){rezultat = 41;}
+		if (differenceTermo == 7){rezultat = 37;}
+		if (differenceTermo == 7.5){rezultat = 33;}
+		if (differenceTermo == 8){rezultat = 29;}
+		if (differenceTermo == 8.5){rezultat = 25;}
+		if (differenceTermo == 9){rezultat = 22;}
+		if (differenceTermo == 9.5){rezultat = 18;}
+		if (differenceTermo > 9.5){rezultat = '<Предел в сторону 0%>';}
+		};
+	  if(dryTermo == 21){
+	    if (differenceTermo < 1){rezultat = '<Предел в сторону 100%>';};
+	    if (differenceTermo < 0){rezultat = '<Неправильные показания>';};
+	    if (differenceTermo == 1){rezultat = 90;}
+	    if (differenceTermo == 1.5){rezultat = 85;}
+		if (differenceTermo == 2){rezultat = 81;}
+		if (differenceTermo == 2.5){rezultat = 77;}
+		if (differenceTermo == 3){rezultat = 72;}
+		if (differenceTermo == 3.5){rezultat = 68;}
+		if (differenceTermo == 4){rezultat = 64;}
+		if (differenceTermo == 4.5){rezultat = 59;}
+		if (differenceTermo == 5){rezultat = 55;}
+		if (differenceTermo == 5.5){rezultat = 51;}
+		if (differenceTermo == 6){rezultat = 47;}
+		if (differenceTermo == 6.5){rezultat = 43;}
+		if (differenceTermo == 7){rezultat = 39;}
+		if (differenceTermo == 7.5){rezultat = 35;}
+		if (differenceTermo == 8){rezultat = 31;}
+		if (differenceTermo == 8.5){rezultat = 28;}
+		if (differenceTermo == 9){rezultat = 24;}
+		if (differenceTermo == 9.5){rezultat = 21;}
+		if (differenceTermo == 10){rezultat = 17;}
+		if (differenceTermo > 10){rezultat = '<Предел в сторону 0%>';}
+		};
+	  if(dryTermo == 22){
+	    if (differenceTermo < 1){rezultat = '<Предел в сторону 100%>';};
+	    if (differenceTermo < 0){rezultat = '<Неправильные показания>';};
+	    if (differenceTermo == 1){rezultat = 91;}
+	    if (differenceTermo == 1.5){rezultat = 85;}
+		if (differenceTermo == 2){rezultat = 82;}
+		if (differenceTermo == 2.5){rezultat = 77;}
+		if (differenceTermo == 3){rezultat = 73;}
+		if (differenceTermo == 3.5){rezultat = 69;}
+		if (differenceTermo == 4){rezultat = 64;}
+		if (differenceTermo == 4.5){rezultat = 61;}
+		if (differenceTermo == 5){rezultat = 56;}
+		if (differenceTermo == 5.5){rezultat = 52;}
+		if (differenceTermo == 6){rezultat = 48;}
+		if (differenceTermo == 6.5){rezultat = 44;}
+		if (differenceTermo == 7){rezultat = 41;}
+		if (differenceTermo == 7.5){rezultat = 37;}
+		if (differenceTermo == 8){rezultat = 33;}
+		if (differenceTermo == 8.5){rezultat = 30;}
+		if (differenceTermo == 9){rezultat = 26;}
+		if (differenceTermo == 9.5){rezultat = 23;}
+		if (differenceTermo == 10){rezultat = 19;}
+		if (differenceTermo > 10){rezultat = '<Предел в сторону 0%>';}
+		};
+	  if(dryTermo == 23){
+	    if (differenceTermo < 1){rezultat = '<Предел в сторону 100%>';};
+	    if (differenceTermo < 0){rezultat = '<Неправильные показания>';};
+	    if (differenceTermo == 1){rezultat = 91;}
+	    if (differenceTermo == 1.5){rezultat = 86;}
+		if (differenceTermo == 2){rezultat = 82;}
+		if (differenceTermo == 2.5){rezultat = 78;}
+		if (differenceTermo == 3){rezultat = 74;}
+		if (differenceTermo == 3.5){rezultat = 70;}
+		if (differenceTermo == 4){rezultat = 65;}
+		if (differenceTermo == 4.5){rezultat = 62;}
+		if (differenceTermo == 5){rezultat = 58;}
+		if (differenceTermo == 5.5){rezultat = 54;}
+		if (differenceTermo == 6){rezultat = 50;}
+		if (differenceTermo == 6.5){rezultat = 46;}
+		if (differenceTermo == 7){rezultat = 42;}
+		if (differenceTermo == 7.5){rezultat = 39;}
+		if (differenceTermo == 8){rezultat = 35;}
+		if (differenceTermo == 8.5){rezultat = 32;}
+		if (differenceTermo == 9){rezultat = 28;}
+		if (differenceTermo == 9.5){rezultat = 25;}
+		if (differenceTermo == 10){rezultat = 21;}
+		if (differenceTermo == 10.5){rezultat = 18;}
+		if (differenceTermo > 10.5){rezultat = '<Предел в сторону 0%>';}
+		};
+	  if(dryTermo == 24){
+	    if (differenceTermo < 1){rezultat = '<Предел в сторону 100%>';};
+	    if (differenceTermo < 0){rezultat = '<Неправильные показания>';};
+	    if (differenceTermo == 1){rezultat = 91;}
+	    if (differenceTermo == 1.5){rezultat = 87;}
+		if (differenceTermo == 2){rezultat = 83;}
+		if (differenceTermo == 2.5){rezultat = 78;}
+		if (differenceTermo == 3){rezultat = 74;}
+		if (differenceTermo == 3.5){rezultat = 70;}
+		if (differenceTermo == 4){rezultat = 66;}
+		if (differenceTermo == 4.5){rezultat = 62;}
+		if (differenceTermo == 5){rezultat = 59;}
+		if (differenceTermo == 5.5){rezultat = 55;}
+		if (differenceTermo == 6){rezultat = 51;}
+		if (differenceTermo == 6.5){rezultat = 48;}
+		if (differenceTermo == 7){rezultat = 44;}
+		if (differenceTermo == 7.5){rezultat = 40;}
+		if (differenceTermo == 8){rezultat = 37;}
+		if (differenceTermo == 8.5){rezultat = 33;}
+		if (differenceTermo == 9){rezultat = 30;}
+		if (differenceTermo == 9.5){rezultat = 27;}
+		if (differenceTermo == 10){rezultat = 24;}
+		if (differenceTermo == 10.5){rezultat = 20;}
+		if (differenceTermo > 10.5){rezultat = '<Предел в сторону 0%>';}
+		};
+	  if(dryTermo == 25){
+	    if (differenceTermo < 1){rezultat = '<Предел в сторону 100%>';};
+	    if (differenceTermo < 0){rezultat = '<Неправильные показания>';};
+	    if (differenceTermo == 1){rezultat = 91;}
+	    if (differenceTermo == 1.5){rezultat = 87;}
+		if (differenceTermo == 2){rezultat = 83;}
+		if (differenceTermo == 2.5){rezultat = 79;}
+		if (differenceTermo == 3){rezultat = 75;}
+		if (differenceTermo == 3.5){rezultat = 71;}
+		if (differenceTermo == 4){rezultat = 67;}
+		if (differenceTermo == 4.5){rezultat = 63;}
+		if (differenceTermo == 5){rezultat = 60;}
+		if (differenceTermo == 5.5){rezultat = 56;}
+		if (differenceTermo == 6){rezultat = 52;}
+		if (differenceTermo == 6.5){rezultat = 49;}
+		if (differenceTermo == 7){rezultat = 45;}
+		if (differenceTermo == 7.5){rezultat = 42;}
+		if (differenceTermo == 8){rezultat = 38;}
+		if (differenceTermo == 8.5){rezultat = 35;}
+		if (differenceTermo == 9){rezultat = 32;}
+		if (differenceTermo == 9.5){rezultat = 29;}
+		if (differenceTermo == 10){rezultat = 26;}
+		if (differenceTermo == 10.5){rezultat = 22;}
+		if (differenceTermo == 11){rezultat = 19;}
+		if (differenceTermo > 11){rezultat = '<Предел в сторону 0%>';}
+		};
+	  console.log(rezultat);
+	  alert(rezultat);
+	  console.log(differenceTermo);
+	  return false"/>
+    </form>
+  </body>
+</html>
